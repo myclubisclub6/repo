@@ -1,0 +1,19 @@
+body {
+  text-align:center;
+  font-family: helvetica;
+  background-color: red;
+  --output-font-size: 20px;
+}
+canvas {
+  border: 2px solid rgb(151, 149, 149);
+}
+output {
+  display: block;
+  padding-bottom: 5vh;
+  font-family: helvetica;
+  font-size: var(--output-font-size);
+}
+output::before {
+  content: "Score: ";
+  font-size: var(--output-font-size);
+}
